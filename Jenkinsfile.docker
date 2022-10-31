@@ -1,7 +1,7 @@
 node ('docker-client') {
     
       stage ('Code from SCM') {
-        git credentialsId: 'Git_Hub', url: 'https://github.com/vinay1074/web_app.git'
+        git credentialsId: 'github-demo-1', url: 'https://github.com/deepraj24/webapp'
       }
       stage ('Build') {
         sh '''mvn clean install'''
