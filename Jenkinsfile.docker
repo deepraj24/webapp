@@ -1,4 +1,4 @@
-node ('docker-client') {
+node ('maven') {
     
       stage ('Code from SCM') {
         git credentialsId: 'github-demo-1', url: 'https://github.com/deepraj24/webapp'
